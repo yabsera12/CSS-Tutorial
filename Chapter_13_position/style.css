@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 1.5rem;
+    min-height: 200vh;
+}
+.outer-container{
+    border: 3px dashed #000;
+    width: 75vw;
+    height: 85vh;
+    margin: 40px auto;
+    position: relative;
+    background-color: aqua;
+}
+.inner-container{
+    border: 2px solid #00f;
+    background-color:antiquewhite;
+    width: 40vh;
+    height: 50vh;
+    margin: 200px auto;
+}
+.box{
+    width: 150px;
+    height: 150px;
+    color: #fff;
+    padding: 1rem;
+}
+.absolute{
+    /*if it is not set position to relative to the parent page it will relative to the window size*/
+    /*it will always choose the closest position of relative layout*/
+    background-color: #00f;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.relative{
+    /*it stays always relative to the parent box*/
+    background-color: rgb(44, 255, 25);
+    position: relative;
+    top: 150px;
+    left: 200px;
+}
+.fixed{
+    /*it will remains constant to the left and top value of the page not the parent*/
+    /*Even when we scroll the page it will not change the position*/
+    background-color: blueviolet;
+    position: fixed;
+    left: 30rem;
+    top: 150px;
+}
+.sticky{
+    /*it will make a movement till the value relative from the window screen we set moved out to the end of the parent value seted up*/
+    background-color: rgb(255, 139, 6);
+    position: sticky;
+    top: 150px;
+}

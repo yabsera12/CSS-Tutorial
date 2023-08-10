@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 1.5rem;
+}
+html{
+    scroll-behavior:smooth;
+}
+
+section{
+    height: 100vh;
+    background-color: aqua;
+}
+.blue{
+    background-color: blue;
+}
+.red{
+    background-color: red;
+}
+.green{
+    background-color: greenyellow;
+}
+section:nth-child(1){
+    background-color: blue;
+    height: 0;
+}
+header, footer{
+    height: 100px;
+    font-size: 5rem;
+    color: aliceblue;
+    text-align: center;
+}
+header{
+    top: 0;
+    position: sticky;
+}
+footer{
+    bottom: 0;
+    position: fixed;
+    font-size: 3rem;
+    background-color: black;
+}
+button{
+    position: fixed;
+    top: 30%;
+    color: black;
+    width: 150px;
+    height: 50px;
+    font-size: inherit;
+    background-color: red;
+    border-radius: 5px;
+    z-index: 1;/*it allows fixed position pass on top of stickey*/
+}

@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    display: block;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    min-height: 100vh;   
+    border-color: aliceblue;
+    background-image: url(bubbles-png-transparent-image-pngpix-4.png),linear-gradient(to left, steelblue,white );
+    background-repeat: repeat-y;
+    /*repears the baground image in full y direction*/
+    background-position: center top;
+    /*set the position of background image to the center top of the window position*/
+    background-size: 20% ,auto;
+    /*20% for the bubble and auto dor the background*/ 
+
+
+
+    /**************simplly*********************/
+    
+    /* background:repeat-y top center url("bubbles-png-transparent-image-pngpix-4.png"),no-repeat linear-gradient(to right, white, steelblue);
+
+    contain background-repeat, background-position
+    */
+    /**************simplly*********************/
+
+
+}
+.container{
+    background-color: rgb(226, 181, 90);
+    background-image: url('./5488770.jpg');
+    background-position:bottom;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: cover;
+}
+.hero{
+    border-bottom: 2px solid black;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    background-color: hsla(0, 0%, 100%, 0.35);
+    
+}
+h1{
+    font-size: 500%;
+    color: aliceblue;
+    text-shadow: 2px 2px 5px rgb(82, 81, 81);
+    /* background-color: hsla(0, 0%, 0%, 0.4);
+    padding: 0.25rem;
+    border-radius: 10px; */
+}
+.nowrap{
+    white-space: nowrap;
+}
+.offscreen{
+    position: absolute;
+    left: -1000px;
+}
+.profile-pic-figure{
+    width: 35%;
+    
+}
+.profile-pic-figure img{
+    width: 100%;
+    height: auto;
+    min-width: 100px;
+    border: 5px double black;
+    border-radius: 50%;
+}
+.example{
+    margin-top: 1rem;
+    padding-left: 20px;
+    border: 1px solid red;
+}
+.example img{
+    width: 25%;
+    height: auto;
+}
+.clip{
+    font-size: 18rem;
+    text-align: center;
+    background-image: url(5488770.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: hsl(0, 0%, 0%, 0.2);
+}

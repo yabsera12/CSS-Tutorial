@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    padding: 20px;
+}
+.container{
+    font-size: 2rem;
+    max-width: 400px;
+    min-height: 400px;
+    margin-inline: auto;
+    border: 1px solid black;
+}
+.box{
+    color: aliceblue;
+    height: 100px;
+   /* min-width: 100px; */
+    font-size: 2rem;
+    padding: 0.5rem;
+    background-color: rgb(61, 61, 61);
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    align-items: center;
+
+    
+    flex-basis: 100px;
+    /*
+    it intake absolute value;
+    it is minimum width
+    */
+    flex-grow: 1;
+    /*
+    it enables to grow upto the page grow
+    */
+   /*  flex-shrink: 1; */
+    /*
+    shrinking ablility of the box
+    */
+}
+.box:nth-child(2){
+    /* flex-shrink: 2; */
+    flex-grow: 2;
+    /*
+    it will grow two times the firest one
+    */
+}
+
+.container{
+    display: flex; 
+    /*it will make all list to row or to width*/
+    justify-content: center;
+    /*
+    horizontal spacing or height type spacing.
+    flex-start = default starting of flex 
+    flex-end = all boxes to the left side
+    center = all to the center;
+    space-around = create edge space and space between the box even without gap;
+    space-between = space between not the start and end in the middle;
+    space-evenly= equale space at the start and in the middle of the box.
+    */
+    gap: 1rem;
+    /*
+    vertical gapping / height type gapping and horiontal too.
+    will careate gap b/n justified space or boxes
+    */
+    align-items: center;
+    /*
+    vertical set-up of the spacing width type sizing
+    flex-start = all way to the top of the page
+    flex-end = all items to the end of total height
+    center = center 
+    */
+    /*flex-direction: col;
+    /*
+    row - default of the flex direction / width direcion.
+    column - make all width directtion to height direction
+    row-reverse - reversing the order changing starting to the ending.
+    column-reverse - reversing the order changing starting to the ending.
+
+
+    */
+    /*flex-wrap: wrap;
+    /*
+    it will wrap the the remain item push to down
+    */
+    flex-flow: nowrap ;
+    /*
+    flex flow = flex-direction + flex wrap;
+    row wrap - it eill wrap until 1 colomun
+    */
+
+    align-content:space-evenly;
+    /*it row level element like justify
+    
+    flex start- all to the top
+    flex end - all way to end
+    space around - space between the toper wrap and the lower wrap
+    space-evenly - same space between top middle and lower spacing in the wrap
+    */
+    
+}
